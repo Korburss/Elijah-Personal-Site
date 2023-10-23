@@ -1,0 +1,22 @@
+form {
+    gap: 15px;
+    padding: 50px;
+    border: 1px var(--golden) solid;
+}
+
+input, textarea {
+    border: 1px solid var(--golden);
+    color: white;
+    background-color: var(--dark);
+    padding: 10px;
+    font-size: var(--xsmall-text);
+  }
+
+  input::placeholder {
+    color: var(--light);
+  }
+
+  label {
+    color: var(--light);
+    font-size: var(--xsmall-text);
+  }

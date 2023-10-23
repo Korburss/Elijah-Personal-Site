@@ -1,0 +1,31 @@
+.menu-model {
+    pointer-events: none;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.menu-model div {
+    background-color: black;
+    height: calc(100% - 318px);
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 300ms ease-in;
+    -moz-transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
+}
+
+.menu-model-active {
+    opacity: 1!important;
+    pointer-events: all!important;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-model div {
+        height: calc(100% - 248px);
+    }
+}

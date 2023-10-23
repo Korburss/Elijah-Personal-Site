@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Development
+{% endblock %}
+{% block main %}
+
+<section class="max-width-standard row-middle">
+    <div class="col-50">
+        <h1 class="header-text">Creating a Website</h1>
+        <h2 class="subhead-text">Stage: Planning</h2>
+        <p class="body-text">Arguably the most important step in creating any program is the planning stage. Avoiding scope creep, deciding the duration of development needed, 
+            and managing the required level of output to meet a set launch date is what seperates hobbist and professionals.</p>
+        <p class="body-text">For my personal website I decided my needs would be best met by:</p>
+        <ol class="body-text">
+            <li>Acquiring a domain name.</li>
+            <li>A Digital Ocean (DO) Droplet.</li>
+            <li>A lightweight and simple backend.</li>
+            <li>No specific frontend.</li>
+            <li>A layout and color scheme that conveyed professionalism.</li>
+            <li>A Contact form.</li>
+        </ol>
+        <h2 class="subhead-text">Stage: Shopping</h2>
+        <p class="body-text">My critera for a good domain name is simple: easy to remember, preferably ".com", and inexpensive. I shopped around on a few domain registers like Namecheap and Cloudflare as I already had a domain in mind. Ultimately I settled on namecheap as they had elijahdonaldson.com for ~$100 for ten years, always do a quick google for promo codes as this saved me ~$20</p>
+        <p class="body-text">My budget is tight for this project as I don't expect large amounts of traffic to my website. This makes a DO droplet ideal as they begin at $4 USD a month and can be upgraded at anytime. This puts my monthly cost at a little under ~$5 USD per month when the domains cost is averaged out.</p>
+        <p class="body-text">Additionally, if you'd like to support me and try out DO, you can use this link <a href="https://m.do.co/c/bc819043b971">to get a $200 credit for 60 days</a> and you make my server free for a little while.</p>
+        <h2 class="subhead-text">Stage: The Backend</h2>
+        <p class="body-text">As my resources are as limited as is my time, I decided to use Nginx and Flask. it's lightweight, and very simple to get going. Additionally Jinja will take care of the small front end considerations.</p>
+        <p class="body-text">While my standard procedure would usually be to setup a MySQL server, I have only a single contact form. As I'm not currently planning to advertise my site, I don't need to track users with UTMs. If that changed in the future I may consider using HubSpot or setting up a database.</p>
+        <h2 class="subhead-text">Stage: The Frontend</h2>
+        <p class="body-text">A lot has been written about the psychology of colors and designs. While I do broadly take these things into consideration, I largely chose based on what I thought looked cool from recent media exposure. A black background to convey a serious, no nonsense professionalism. a golden/yellow color for accent borders as these felt high tech, and clean white for the text.</p>
+        <p class="body-text">While it is technically a little overkill for a single form, I decided I wanted to do things right and included two previous utility scripts I've created seperately for use in multiple projects: <a href="https://github.com/Korburss/UTM-Storage">UTM-storage</a> and <a href="https://github.com/Korburss/Form-AutofillUTM-storage">Form-Autofill</a> The first ensures UTMs survive and are stored correctly as a user navigates the website, and the second can use the first or a previous form fill to auto fill a form.</p>
+        <p class="body-text">As my main goal is ultimately to advertise myself, I decided I wanted a fixed header/footer as these would contain the core roles I wanted to be hired for and the places I could be hired. This adds in the extra consideration of always needing to add padding to ensure the pages main section would not be covered. As such I decided to offload as much of the menu to the hamburger/mobile menu as possible and make it available at all sizes instead of only smaller sizes.</p>
+        <p class="body-text">With that done, I needed only to draft the copy and begin building.</p>
+        <p class="body-text">Interested in hiring me?</p>
+        <a href="{{ url_for('home_bp.contact') }}" class="main-cta">Contact Me</a>
+    </div>
+</section>
+
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+{% endblock %}

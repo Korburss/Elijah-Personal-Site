@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Not Found
+{% endblock %}
+{% block main %}
+    <h1 class="subheader-text">Something bad happened!</h1>
+    <div class="testimonial-box"><p class="body-text">{{error}}</p></div>
+    <p class="body-text"><a href="{{ url_for('home_bp.index') }}">You should probably go back and start over!</a></p>
+{% endblock %}

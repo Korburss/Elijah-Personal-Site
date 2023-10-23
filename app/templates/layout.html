@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+<head>
+  <meta charset="utf-8">
+  {% if title %}
+  <title>{{ title }} - Elijah Donaldson</title>
+  {% else %}
+  <title>Elijah Donaldson</title>
+  {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The career and accomplishments of Elijah Donaldson" />
+  <meta name="keywords" content="programming, python, website, wordpress, css, javascript, php" />
+  <meta name="robots" content="follow"/>
+  <meta charset="utf-8"/>
+  <meta name="author" content="Elijah Donaldson" />
+  <meta name="copyright" content="Elijah Donaldson" />
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/model.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/logos/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/images/logos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/images/logos/favicon-16x16.png">
+  <link rel="manifest" href="/static/images/logos/site.webmanifest">
+  {% block head_includes %}
+  {% endblock %}
+</head>
+
+
+<body>
+  <header class="row-middle-space-between col">
+    <div class="row-middle-space-between width-100 margin-bottom-25 width-100 underline-gold override-col">
+      <figure class="margin-25">
+        <a href="{{ url_for('home_bp.index') }}"><picture>
+          <source srcset="/static/images/logos/logo-gold.webp" type="image/webp">
+          <source srcset="/static/images/logos/logo-gold.png" type="image/png">
+          <img src="/static/images/logos/logo-gold.png" class="logo-border header-footer-image"
+              width="100" height="100" alt="Elijah's logo">
+        </picture></a>
+      </figure>
+     <div class="row-middle col hide-on-mobile">
+        <h1 class="text-white website-title">ELIJAH DONALDSON</h1>
+        <div class="width-100">
+          <ul class="row-middle-space-between">
+            <li>
+              <svg viewBox="0 0 24 24" id="triple-right-sign"
+                  xmlns="http://www.w3.org/2000/svg" class="icon line" width="30px" height="30px" fill=" none">
+                  <polyline id="primary" points="14 5 21 12 14 19"
+                    style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                  </polyline>
+                  <polyline id="primary-2" data-name="primary" points="8.5 19 15.5 12 8.5 5"
+                    style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                  </polyline>
+                  <polyline id="primary-3" data-name="primary"
+                    style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;"
+                    points="3 19 10 12 3 5"></polyline>
+                </svg>Web Development
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"
+                  id="triple-right-sign" xmlns="http://www.w3.org/2000/svg" class="icon line" width="30px" height="30px"
+                  fill=" none">
+                  <polyline id="primary" points="14 5 21 12 14 19"
+                    style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                  </polyline>
+                  <polyline id="primary-2" data-name="primary" points="8.5 19 15.5 12 8.5 5"
+                    style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                  </polyline>
+                  <polyline id="primary-3" data-name="primary"
+                    style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;"
+                    points="3 19 10 12 3 5"></polyline>
+                </svg>Marketing Operations
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" id="triple-right-sign"
+                  xmlns="http://www.w3.org/2000/svg" class="icon line" width="30px" height="30px" fill=" none">
+                  <polyline id="primary" points="14 5 21 12 14 19"
+                    style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                  </polyline>
+                  <polyline id="primary-2" data-name="primary" points="8.5 19 15.5 12 8.5 5"
+                    style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                  </polyline>
+                  <polyline id="primary-3" data-name="primary"
+                    style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;"
+                    points="3 19 10 12 3 5"></polyline>
+                </svg>Social Media Management
+            </li>
+          </ul>
+        </div>
+      </div> 
+      <button onClick="toggleMenu()" class="menu-button" aria-label="Menu"><svg class="hamburger margin-25" width="60px" height="60px" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 18L20 18" stroke="#fcee0a" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M4 12L20 12" stroke="#fcee0a" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M4 6L20 6" stroke="#fcee0a" stroke-width="2" stroke-linecap="round"></path>
+        </svg></button>
+    </div>
+    <div class="row-middle col menu-model">
+      <div class="row-middle col" id="menu-model">
+        <figure class="margin-25">
+          <a href="{{ url_for('home_bp.index') }}"><picture>
+            <source srcset="/static/images/logos/logo-gold.webp" type="image/webp">
+          <source srcset="/static/images/logos/logo-gold.png" type="image/png">
+            <img src="/static/images/logos/logo-gold.png" class="logo-border"
+                width="100" height="100" alt="Elijah's logo">
+          </picture></a>
+        </figure>
+      <h1 class="text-white website-title">ELIJAH DONALDSON</h1>
+      <nav>
+        <ul class="col">
+          <li>
+            <a href="{{ url_for('home_bp.testimonials') }}" class="no-link"><svg viewBox="0 0 24 24" id="triple-right-sign"
+                xmlns="http://www.w3.org/2000/svg" class="icon line" width="30px" height="30px" fill=" none">
+                <polyline id="primary" points="14 5 21 12 14 19"
+                  style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                </polyline>
+                <polyline id="primary-2" data-name="primary" points="8.5 19 15.5 12 8.5 5"
+                  style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                </polyline>
+                <polyline id="primary-3" data-name="primary"
+                  style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;"
+                  points="3 19 10 12 3 5"></polyline>
+              </svg>Testimonials</a>
+          </li>
+          <li>
+            <a href="{{ url_for('home_bp.contact') }}" class="no-link"><svg viewBox="0 0 24 24" id="triple-right-sign"
+                xmlns="http://www.w3.org/2000/svg" class="icon line" width="30px" height="30px" fill=" none">
+                <polyline id="primary" points="14 5 21 12 14 19"
+                  style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                </polyline>
+                <polyline id="primary-2" data-name="primary" points="8.5 19 15.5 12 8.5 5"
+                  style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                </polyline>
+                <polyline id="primary-3" data-name="primary"
+                  style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;"
+                  points="3 19 10 12 3 5"></polyline>
+              </svg>Contact Me</a>
+          </li>
+          <li>
+            <a href="{{ url_for('home_bp.development') }}" class="no-link"><svg viewBox="0 0 24 24" id="triple-right-sign"
+                xmlns="http://www.w3.org/2000/svg" class="icon line" width="30px" height="30px" fill=" none">
+                <polyline id="primary" points="14 5 21 12 14 19"
+                  style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                </polyline>
+                <polyline id="primary-2" data-name="primary" points="8.5 19 15.5 12 8.5 5"
+                  style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                </polyline>
+                <polyline id="primary-3" data-name="primary"
+                  style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;"
+                  points="3 19 10 12 3 5"></polyline>
+              </svg>Site Dev Process</a>
+          </li>
+        </ul>
+      </nav>
+    </div></div>
+  </header>
+
+  <main>
+    <article class="row-middle col">
+      {% block main %}
+      {% endblock %}
+    </article>
+  </main>
+
+  <footer class="row-middle-space-between col">
+    <div class="row-middle-space-between overline-gold margin-top-25 width-100 override-col">
+      <figure class="margin-25">
+        <a href="{{ url_for('home_bp.index') }}"><picture>
+          <source srcset="/static/images/logos/logo-gold.webp" type="image/webp">
+          <source srcset="/static/images/logos/logo-gold.png" type="image/png">
+          <img src="/static/images/logos/logo-gold.png" class="logo-border header-footer-image"
+              width="100" height="100" alt="Elijah's logo">
+        </picture></a>
+      </figure>
+      <div>
+        <ul class="col-on-break">
+          <li>Find Me On:</li>
+          <li><a href="https://www.upwork.com/freelancers/~0178a5f7f46c2367f5">Upwork</a></li>
+          <li><a href="https://www.linkedin.com/in/elijah-donaldson-95b85b195/">Linkedin</a></li>
+        </ul>
+      </div>
+      <div class="margin-25"><small>Copyright © 2023 Elijah Donaldson</small></div>
+    </div>
+  </footer>
+</body>
+
+{% block scripts %}
+<script src="/static/js/menuToggle.js" async></script>
+{% endblock %}

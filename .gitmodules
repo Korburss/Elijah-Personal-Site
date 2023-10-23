@@ -1,0 +1,6 @@
+[submodule "app/static/js/UTM-storage"]
+	path = app/static/js/UTM-storage
+	url = https://github.com/Korburss/UTM-storage.git
+[submodule "app/static/js/Form-Autofill"]
+	path = app/static/js/Form-Autofill
+	url = https://github.com/Korburss/Form-Autofill.git

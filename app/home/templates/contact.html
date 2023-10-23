@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Contact
+{% endblock %}
+
+{% block head_includes %}
+<link rel="stylesheet" href="/static/css/form.css">
+{% endblock %}
+
+{% block main %}
+
+    <section class="max-width-standard row-middle">
+        <div class="col">
+            <form name="form" id="form" class="col">
+                <h1 class="body-text">Contact me by filling out this form!</h1>
+                <label for="first-name">First Name</label>
+                <input id="first-name" name="first-name" placeholder="First Name" required type="text">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" name="last-name" placeholder="Last Name" required type="text">
+                <label for="email">Email</label>
+                <input id="email"  name="email" placeholder="example@example.com" type="email">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" type="text">What would you like to discuss?</textarea>
+                <div class="row-middle"><button class="main-cta" onClick="formSubmit()" type="button">Get Started</button></div>
+            </form>
+        </div>
+    </section>
+
+    <section id="completion" style="display: none;">
+        <div class="col">
+            <h1 class="body-text">I've recieved your form submission, I'll contact you as soon as I can!</h1>
+            <p class="body-text">Until then you can read about the development of <a href="{{ url_for('home_bp.development') }}">site</a>!</p>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="/static/js/Form-Autofill/formFill.js" async defer></script>
+<script src="/static/js/UTM-storage/utmStorage.js" async defer></script>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+{% block main %}
+
+<section class="max-width-standard row-middle">
+    <div class="col-50">
+        <h1 class="header-text">A history of excellence</h1>
+        <p class="body-text">I am a Web Developer with over half a decade of extensive real-world experience in website
+            creation and development. I have encountered and overcome many of the pitfalls of development and believe
+            that knowing what could be wrong is often key to solving the problem quickly.</p>
+        <p class="body-text">I am proficient in Python Flask, PHP WordPress, HTML and JavaScript. I have extensive
+            experience in working with Marketing and am capable of handling all needed integrations with Google,
+            Facebook, CMS (Hubspot, Salesforce, Pardot, and HTML email creation). Additionally I am proficient in
+            creating reporting for all of the above and automating them.</p>
+        <p class="body-text">I believe in being a go to solution for all technical problems my clients may face and
+            provide advice for a streamlined and efficient experience.</p>
+        <a href="{{ url_for('home_bp.contact') }}" class="main-cta">Contact Me</a>
+    </div>
+    <div class="col-50 row-middle">
+        <figure class="max-width-400px">
+            <picture>
+                <source srcset="/static/images/eli-face-800.webp" type="image/webp">
+                <source srcset="/static/images/eli-face-800.jpg" type="image/jpg">
+                <img src="/static/images/logos/eli-face-800.jpg" class="img" width="500" height="500"
+                    alt="Elijah's face">
+            </picture>
+        </figure>
+    </div>
+</section>
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+{% endblock %}
