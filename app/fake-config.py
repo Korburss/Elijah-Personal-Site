@@ -10,3 +10,4 @@ MAIL_PORT = "587"
 GMAIL_SSL = "465"
 MAIL_USE_TLS = True
 MAIL_USE_SSL = False
+Admins = "YOUR NAME"
