@@ -57,10 +57,6 @@ article div, section {
     gap: 30px;
 }
 
-article {
-    gap: 50px;
-}
-
  main {
     padding: 184px 0px;
  }
@@ -215,6 +211,14 @@ footer small {
   padding: 0px;
 }
 
+.gap-10 {
+    gap: 10px;
+}
+
+.center-text {
+    text-align: center;
+}
+
 .main-cta {
     padding: 10px 20px;
     background-color: var(--dark);
@@ -235,14 +239,18 @@ footer small {
     color: gray;
 }
 
-.testimonial-box {
+.box {
     max-width: 25%;
-    text-align: center;
     border: 1px solid var(--golden);
     padding: 15px;
 }
 
-.testimonial-row {
+.blog {
+    border: 1px solid var(--golden);
+    padding: 15px;
+}
+
+.flex-row {
     flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
@@ -335,7 +343,7 @@ footer small {
         align-items: center;
     }
 
-    .testimonial-box {
+    .box {
         max-width: 250px;
     }
 }

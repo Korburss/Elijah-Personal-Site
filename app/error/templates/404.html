@@ -3,8 +3,16 @@
 {% block title %}
 Not Found
 {% endblock %}
+
+{% block head_includes %}
+<title>Site Development - Elijah Donaldson</title>
+<meta name="description" content="We've had an error!" />
+<meta name="keywords" content="programming, python, website, css, javascript, flask, error" />
+{% endblock %}
+
+
 {% block main %}
     <h1 class="subheader-text">Something bad happened!</h1>
-    <div class="testimonial-box"><p class="body-text">{{error}}</p></div>
+    <div class="box"><p class="body-text">{{error}}</p></div>
     <p class="body-text"><a href="{{ url_for('home_bp.index') }}">You should probably go back and start over!</a></p>
 {% endblock %}

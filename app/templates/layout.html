@@ -3,14 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  {% if title %}
-  <title>{{ title }} - Elijah Donaldson</title>
-  {% else %}
-  <title>Elijah Donaldson</title>
-  {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="The career and accomplishments of Elijah Donaldson" />
-  <meta name="keywords" content="programming, python, website, wordpress, css, javascript, php" />
   <meta name="robots" content="follow"/>
   <meta charset="utf-8"/>
   <meta name="author" content="Elijah Donaldson" />
@@ -23,6 +16,7 @@
   <link rel="manifest" href="/static/images/logos/site.webmanifest">
   {% block head_includes %}
   {% endblock %}
+  <script defer data-domain="elijahdonaldson.com" src="https://plausible.io/js/script.js"></script>
 </head>
 
 
@@ -136,7 +130,7 @@
               </svg>Contact Me</a>
           </li>
           <li>
-            <a href="{{ url_for('home_bp.development') }}" class="no-link"><svg viewBox="0 0 24 24" id="triple-right-sign"
+            <a href="{{ url_for('blog_bp.development') }}" class="no-link"><svg viewBox="0 0 24 24" id="triple-right-sign"
                 xmlns="http://www.w3.org/2000/svg" class="icon line" width="30px" height="30px" fill=" none">
                 <polyline id="primary" points="14 5 21 12 14 19"
                   style="fill: #fcee0a; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">

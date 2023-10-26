@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Development
+{% endblock %}
+
+{% block head_includes %}
+<title>Blogs - Elijah Donaldson</title>
+<meta name="description" content="Blogs on a host of subjects relating to Elijah Donaldsons perfessional experiences." />
+<meta name="keywords" content="programming, python, website, css, javascript, flask, planning, blogs" />
+{% endblock %}
+
+{% block main %}
+
+<section class="max-width-standard row-middle col">
+    <div class="row-middle col gap-10">
+        <h1 class="header-text">Blogs By Elijah Donaldson</h1>
+    </div>
+    <a href="{{ url_for('blog_bp.freelanceAdviceOne') }}" class="no-link width-100">
+        <article class="blog col gap-10">
+            <h1 class="body-text">Freelance Advice: Bad News First</h1>
+            <p class="body-text">
+                The first in a series of blogs sharing advice drawn from my experiences as a successful freelancer.
+            </p>
+        </article>
+    </a>
+    <a href="{{ url_for('blog_bp.development') }}" class="no-link width-100">
+        <article class="blog col gap-10">
+            <h1 class="body-text">Developing my personal website</h1>
+            <p class="body-text">
+                Learn about the decisions involved in the creation of this site.
+            </p>
+        </article>
+    </a>
+</section>
+
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+{% endblock %}

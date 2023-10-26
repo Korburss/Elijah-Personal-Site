@@ -14,9 +14,11 @@ def create_app():
 
     with app.app_context():
         from .home import home
+        from .blog import blog
         from .error import error
 
         app.register_blueprint(home.home_bp)
+        app.register_blueprint(blog.blog_bp)
         app.register_blueprint(error.error_bp)
 
     if not app.debug:

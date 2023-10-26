@@ -3,6 +3,13 @@
 {% block title %}
 Development
 {% endblock %}
+
+{% block head_includes %}
+<title>Personal Site Development - Elijah Donaldson</title>
+<meta name="description" content="A walk through of the technical decisions made in creation of this website." />
+<meta name="keywords" content="programming, python, website, css, javascript, flask, planning" />
+{% endblock %}
+
 {% block main %}
 
 <section class="max-width-standard row-middle">
@@ -21,12 +28,12 @@ Development
             <li>A Contact form.</li>
         </ol>
         <h2 class="subhead-text">Stage: Shopping</h2>
-        <p class="body-text">My critera for a good domain name is simple: easy to remember, preferably ".com", and inexpensive. I shopped around on a few domain registers like Namecheap and Cloudflare as I already had a domain in mind. Ultimately I settled on namecheap as they had elijahdonaldson.com for ~$100 for ten years, always do a quick google for promo codes as this saved me ~$20</p>
-        <p class="body-text">My budget is tight for this project as I don't expect large amounts of traffic to my website. This makes a DO droplet ideal as they begin at $4 USD a month and can be upgraded at anytime. This puts my monthly cost at a little under ~$5 USD per month when the domains cost is averaged out.</p>
+        <p class="body-text">My critera for a good domain name is simple: easy to remember, preferably ".com", and inexpensive. I shopped around on a few domain registers like Namecheap and Cloudflare as I already had a domain in mind. Ultimately I settled on namecheap as they had elijahdonaldson.com for the cheapest price, always do a quick google for promo codes as this saved me ~$20.</p>
+        <p class="body-text">My budget is tight for this project as I don't expecta large amount of traffic to my website. This makes a DO droplet ideal as they begin at $4 USD a month and can be upgraded at anytime. This puts my monthly cost at a little under ~$5 USD per month when the domains cost is averaged out.</p>
         <p class="body-text">Additionally, if you'd like to support me and try out DO, you can use this link <a href="https://m.do.co/c/bc819043b971">to get a $200 credit for 60 days</a> and you make my server free for a little while.</p>
         <h2 class="subhead-text">Stage: The Backend</h2>
-        <p class="body-text">As my resources are as limited as is my time, I decided to use Nginx and Flask. it's lightweight, and very simple to get going. Additionally Jinja will take care of the small front end considerations.</p>
-        <p class="body-text">While my standard procedure would usually be to setup a MySQL server, I have only a single contact form. As I'm not currently planning to advertise my site, I don't need to track users with UTMs. If that changed in the future I may consider using HubSpot or setting up a database.</p>
+        <p class="body-text">As my resources are as limited as my time, I decided to use Nginx and Flask. it's lightweight, and very simple to get going. Additionally Jinja will take care of the small front end considerations.</p>
+        <p class="body-text">While my standard procedure would usually be to setup a MySQL server, I have only a single contact form. As I'm not currently planning to advertise my site, I don't need to track users with UTMs. If that changed in the future I may consider using HubSpot or setting up a database but for now my single contact form can be automatically sent to my email much the same as my error logs are.</p>
         <h2 class="subhead-text">Stage: The Frontend</h2>
         <p class="body-text">A lot has been written about the psychology of colors and designs. While I do broadly take these things into consideration, I largely chose based on what I thought looked cool from recent media exposure. A black background to convey a serious, no nonsense professionalism. a golden/yellow color for accent borders as these felt high tech, and clean white for the text.</p>
         <p class="body-text">While it is technically a little overkill for a single form, I decided I wanted to do things right and included two previous utility scripts I've created seperately for use in multiple projects: <a href="https://github.com/Korburss/UTM-Storage">UTM-storage</a> and <a href="https://github.com/Korburss/Form-AutofillUTM-storage">Form-Autofill</a> The first ensures UTMs survive and are stored correctly as a user navigates the website, and the second can use the first or a previous form fill to auto fill a form.</p>
