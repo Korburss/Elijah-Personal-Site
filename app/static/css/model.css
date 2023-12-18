@@ -26,6 +26,6 @@
 
 @media only screen and (max-width: 600px) {
     .menu-model div {
-        height: calc(100% - 248px);
+        height: calc(100% - 165px);
     }
 }
