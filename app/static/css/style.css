@@ -58,7 +58,7 @@ article div, section {
 }
 
  main {
-    padding: 184px 0px;
+    padding: 140px 0px;
  }
 
 .row-middle {
@@ -138,12 +138,12 @@ a:hover {
     margin: 10px;
 }
 
-.margin-top-25 {
-    margin-top: 25px;
+.margin-top-10 {
+    margin-top: 10px;
 }
 
-.margin-bottom-25 {
-    margin-bottom: 25px;
+.margin-bottom-10 {
+    margin-bottom: 10px;
 }
 
 .width-100 {
@@ -292,7 +292,7 @@ footer small {
 
 
     main {
-        padding: 237px 0px 184px 0px;
+        padding: 205px 0px 0px 0px;
      }
     
 }
@@ -315,7 +315,7 @@ footer small {
     }
 
     main {
-        padding: 184px 0px;
+        padding: 100px 0px;
      }
     
 }
@@ -336,7 +336,7 @@ footer small {
         height: 50px;
     }
     main {
-        padding: 139px 0px;
+        padding: 145px 0px;
      }
      footer ul li {
         margin: 0px;
