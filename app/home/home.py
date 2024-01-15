@@ -22,4 +22,3 @@ def contact():
         data = request.form
         send_email(data)
         return "200"
-    
